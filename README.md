@@ -9,7 +9,7 @@ This repository is published as a peer-review artifact. It contains exactly the 
 | Path | Contents |
 |---|---|
 | `ZkKzgAuth/` | Lean 4 development. Defines the protocol's blinded KZG transcript and proves Completeness, the algebraic basis of Knowledge Soundness, and Zero-Knowledge against an abstract bilinear-pairing model. Compiles with `lake build`. No `sorry` placeholders. |
-| `zk_kzg_sim/` | Rust reference implementation using the arkworks BN254 backend. Used for the latency measurements reported in Section VI of the paper. Sample output is included in `benchmark_results.txt` and `benchmark_x86.csv`. |
+| `zk_kzg_sim/` | Rust reference implementation using the arkworks BN254 backend. Used for the latency measurements reported in Section VI of the paper. Sample output is included for both platforms: `benchmark_x86.csv` and `benchmark_x86_stdout.txt` (Intel Core i5-7300U, Windows 11); `benchmark_arm.csv` and `benchmark_arm_run{1,2,3}.txt` (Cortex-A78 on MediaTek Dimensity 7300, Android Termux, three pinned runs at `taskset -c 4-7`). |
 | `requirements/` | Toolchain version pins for Lean and Rust. |
 
 ## Quickstart

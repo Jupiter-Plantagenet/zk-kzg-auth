@@ -1,0 +1,15 @@
+=== ZK-KZG-Auth Performance Benchmark (BN254) ===
+Host: aarch64-android    Trials per degree: 200    Degrees: [16, 32, 64, 128, 256]
+
+   d |     UE-mean      UE-med      UE-p95 |        Eval    Quotient         MSM |    CPU-mean     CPU-p95 | OK
+----------------------------------------------------------------------------------------------------------------------------
+  16 |  1358.69 µs  1358.23 µs  1382.08 µs |     0.73 µs     0.78 µs   784.29 µs |  2733.58 µs  2766.23 µs | yes
+  32 |  1858.82 µs  1856.92 µs  1885.00 µs |     1.33 µs     1.39 µs  1284.35 µs |  2734.16 µs  2772.08 µs | yes
+  64 |  2725.84 µs  2724.39 µs  2754.46 µs |     2.88 µs     2.84 µs  2146.97 µs |  2766.26 µs  2836.31 µs | yes
+ 128 |  3990.82 µs  3977.54 µs  4071.39 µs |     5.58 µs     5.76 µs  3402.27 µs |  2832.95 µs  2915.31 µs | yes
+ 256 |  6465.62 µs  6470.77 µs  6542.15 µs |    10.84 µs    10.79 µs  5866.10 µs |  2845.20 µs  2959.46 µs | yes
+
+Over-the-air payload : 64 bytes (two compressed G1 points: π, V)
+Round trips          : 1 (single challenge-response)
+All authentications successful — pairing equation balances end-to-end.
+CSV written to: benchmark.csv
