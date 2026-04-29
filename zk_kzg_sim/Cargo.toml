@@ -1,0 +1,12 @@
+[package]
+name = "zk_kzg_sim"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+ark-bn254 = "0.4.0"
+ark-ec = "0.4.0"
+ark-ff = "0.4.0"
+ark-poly = "0.4.2"
+ark-std = "0.4.0"
+rand = "0.8.5"

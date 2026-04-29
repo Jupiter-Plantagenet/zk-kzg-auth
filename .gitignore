@@ -1,0 +1,31 @@
+# Paper sources and intermediate files (not part of the public artifact)
+icmic_paper.tex
+icmic_paper.pdf
+icmic_paper.aux
+icmic_paper.log
+icmic_paper.out
+icmic_paper.toc
+icmic_paper.bbl
+icmic_paper.blg
+icmic_paper.synctex.gz
+*.tex.bak
+
+# Project scratchpads (not part of the public artifact)
+paper_decisions.md
+figure_prompts.md
+
+# Lean build artifacts
+**/.lake/
+*.olean
+*.ilean
+
+# Rust build artifacts
+**/target/
+
+# Editor / OS / Claude Code
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+.claude/
+*.swp

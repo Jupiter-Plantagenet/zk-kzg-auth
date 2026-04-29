@@ -1,0 +1,16 @@
+    Finished `release` profile [optimized] target(s) in 0.15s
+     Running `target\release\zk_kzg_sim.exe`
+=== ZK-KZG-Auth Performance Benchmark (BN254) ===
+Trials per degree: 200    Degrees: [16, 32, 64, 128, 256]
+
+   d |     UE-mean      UE-med      UE-p95 |        Eval    Quotient         MSM |    CPU-mean     CPU-p95 | OK
+----------------------------------------------------------------------------------------------------------------------------
+  16 |  1894.12 µs  1369.20 µs  3968.20 µs |     1.05 µs     2.03 µs  1171.23 µs |  3975.55 µs  8809.70 µs | yes
+  32 |  1903.36 µs  1780.00 µs  2694.60 µs |     1.41 µs     1.89 µs  1314.25 µs |  2942.27 µs  4155.50 µs | yes
+  64 |  2633.64 µs  2560.60 µs  3067.00 µs |     2.34 µs     2.88 µs  2080.07 µs |  2799.83 µs  3279.80 µs | yes
+ 128 |  4027.26 µs  3815.80 µs  4994.90 µs |     4.54 µs     5.87 µs  3436.24 µs |  2965.19 µs  3822.00 µs | yes
+ 256 |  6521.33 µs  6090.40 µs  9276.00 µs |     8.70 µs    10.34 µs  5930.02 µs |  2926.07 µs  4192.40 µs | yes
+
+Over-the-air payload : 64 bytes (two compressed G1 points: π, V)
+Round trips          : 1 (single challenge-response)
+All authentications successful — pairing equation balances end-to-end.
